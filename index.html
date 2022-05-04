@@ -409,7 +409,7 @@
                   target="_blank"
                   rel="noreferrer noopener"
                   class="post-address"
-                  >г. Киев, пр-т Леси Украинки, 26</a
+                  >м. Київ, пр-т Лесі Українки, 26</a
                 >
               </li>
               <li class="list">
@@ -456,10 +456,38 @@
             </li>
           </ul>
         </div>
+        <div class="sing-up-form">
+          <p class="sign-up-header">Підпишіться на оновлення</p>
+          <form class="email-form" name="signup_form" autocomplete="on">
+            <input
+              type="email"
+              name="email"
+              class="sign-up-email"
+              id="email"
+              placeholder="E-mail"
+            />
+            <label for="email" class="sign-up-field"></label>
+
+            <button type="submit" class="sign-up-button">
+              Підписатися
+              <svg class="icon-send" width="24" height="24">
+                <use href="./images/icon.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
+
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
+        <h4 class="header-modal">Залишіть свої дані, ми вам зателефонуємо</h4>
+        <form class="form">
+          <div class="form-field">
+            <input type="text" class="form-input" name="name" id="name" />
+            <label for="name" class="form-label">Ім'я</label>
+          </div>
+        </form>
         <button type="button" class="modal-btn-close" data-modal-close>
           <svg class="close-icon" width="30px" height="30px">
             <use href="./images/icon.svg#icon-close-black-min"></use>
@@ -467,6 +495,22 @@
         </button>
       </div>
     </div>
+
     <script src="./js/modal.js"></script>
+    <script>
+      (() => {
+        document
+          .querySelector(".js-speaker-form")
+          .addEventListener("submit", (e) => {
+            e.preventDefault();
+
+            new FormData(e.currentTarget).forEach((value, name) =>
+              console.log(`${name}: ${value}`)
+            );
+
+            e.currentTarget.reset();
+          });
+      })();
+    </script>
   </body>
 </html>

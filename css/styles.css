@@ -21,6 +21,9 @@ ul {
 h1,
 h2,
 h3,
+h4,
+h5,
+h6,
 p {
   margin: 0;
 }
@@ -520,7 +523,99 @@ img {
 .conect {
   margin-left: 70px;
 }
+/* -----------Sign-up for news----------------- */
 
+.sing-up-form {
+  margin-left: 93px;
+  
+}
+
+.email-form {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sign-up-header {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.sign-up-email {
+  width: 358px;
+  height: 50px;
+  margin-right: 12px;
+  padding-left: 16px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.sign-up-field {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* .sign-up-button{
+  position: absolute;
+  width: 200px;
+  height: 50px;
+  padding: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: #FFFFFF;
+  background-color: rgba(33, 150, 243, 1);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: transparent;
+} */
+
+.sign-up-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 29px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: transparent;
+  width: 200px;
+  height: 50px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+
+  background-color: rgba(33, 150, 243, 1);
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.icon-send {
+  fill: rgba(255, 255, 255, 1);
+  margin-left: 10px;
+  /* position: absolute;
+  top: 13px; */
+}
+}
 /*--------------------- Our team--------------------- */
 .team-position {
   color: var(--second-text-color);
@@ -737,4 +832,43 @@ img {
 .backdrop.is-hidden .modal {
   transform: scale(1) rotate(120deg);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-modal {
+  display: inline-block;
+  margin-top: 40px;
+  padding-left: auto;
+  padding-right: auto;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
+.form {
+  width: 448px;
+  padding-left: 35px;
+  padding-right: 45px;
+}
+
+.form-label{
+position: absolute;
+top: 0;
+left: 0;
+background-color: teal;
+transform: translate(-50% -50%);
+}
+
+.form-field {
+  position: relative;
+   margin-top: 30px;
+}
+
+.form-input {
+  width: 448px;
+  height: 40px;
+  outline: 2px solid tomato;
+
 }
