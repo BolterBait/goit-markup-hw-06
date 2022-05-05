@@ -862,7 +862,6 @@ img {
   height: 40px;
   border: 1px solid #2196F3;
   border-radius: 4px;
-  margin-bottom: 10px;
   padding-left: 42px;
   color: var(--text-decoration-color);
 }
@@ -881,6 +880,15 @@ img {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
-
 }
 
+.input-wrap {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.icon-person {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
